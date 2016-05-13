@@ -104,6 +104,7 @@ server.route([
     config: {
       validate: {
         payload: {
+          id: Joi.any(),
           name: Joi.string().required()
         }
       }
